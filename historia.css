@@ -1,0 +1,358 @@
+@font-face {
+    font-family: "vanilla whale";
+    src: url("../fonts/Vanilla\ Whale.otf");
+}
+
+:root {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: larger;
+    font-weight: 100;
+    --cor-principal: rgb(73, 29, 0);
+    --marrom: rgb(44, 20, 5);
+    --backgroud: rgb(138, 50, 0);
+    --boder: 0.3rem solid rgb(255, 
+    171, 116);
+    --letra: rgb(255, 255, 255);
+    --fonte-titulo : 'vanilla whale';
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s linear;
+}
+
+body{
+    background-color: var(--cor-principal);
+}
+
+
+/* espaço do cabeçalho */
+section{
+    padding: 60px;
+    margin: 0 auto;
+    max-width: 2000px;
+   }
+
+/* mexendo na section que é a parte da logo e o nav */
+section{
+    padding: 3rem 2 rem;
+    margin: 0 auto;
+    /* max-width: 1000px; */
+}
+
+/* Colocando cor no "Café e Prosa */
+.header h1{
+   color: #ffd0b0;
+   font-family: var(--fonte-titulo);
+   
+}
+/* Classe Header */
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    border-bottom: var(--boder);
+}
+
+.header section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0.2rem;
+    padding-bottom: 0.5rem ;
+    background-color: var(--marrom);
+
+}
+
+/* aplicando as cores no menu */
+.navbar a{
+    margin: 0 1rem;
+    font: 1.8rem;
+    color:  #ffd4b0;
+    font-family: var(--fonte-titulo);
+}
+
+/* ao passar o mouse nos ícones do menu, mudar de cor */
+.navbar a:hover{
+    color: var(--letra);
+    border-bottom: 0.1rem solid ;
+    padding-bottom: 0.2rem;
+font-size: 0.9rem;
+}
+
+/* icons */
+.icons img{
+    margin: 0.1rem;
+    cursor: pointer;
+}
+
+/* imagem dos donos */
+.container-image img{
+margin: 5px;
+margin-bottom: 0;
+border-radius: 10px;
+}
+
+/* imagem redonda */
+#imagem_redonda{
+    margin: 15px;
+    height: 45px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+
+
+/* título da imagemn */
+.title{
+    font-size: 3rem;
+    color: rgb(255, 213, 135);
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+    margin: 30px;
+    font-family: var(--fonte-titulo);
+}
+
+.title span{
+    color: #ffffff;
+    text-transform: uppercase;
+}
+.row{
+    margin: 1px;
+}
+.about{
+    margin-top: 9vb;
+}
+
+/* cor do quadro "Sobre Nós */
+.about .row{
+    display: flex;
+    align-items: center;
+    background-color: #ffc773 ;
+    gap: 1.5rem;
+    padding: 15px;
+    border-radius: 8px;
+    
+}
+
+
+.about .row .content{
+    padding: 3rem;
+}
+
+/* Título do Sobre nós */
+.about .row .content h3 {
+    font-size: 2rem;
+    color: var(--cor-principal);
+    font-family: var(--fonte-titulo);
+}
+
+.about .row .content p {
+    font-size: 1.0rem;
+    color: #030200;
+    padding: 1rem 0;
+    line-height: 1.8;
+}
+
+
+
+
+/* Main da Sarah (Caixas d texto) */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+
+}
+
+.cover {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.box {
+    background-color: rgb(255, 213, 135);
+    border-radius: 8px;
+    box-shadow: 0 3px 6px #94613c;
+    width: 300px;
+    padding: 35px;
+    text-align: center;
+    transition: transform 0.2s;
+    font-family: "Fira Sans", sans-serif;
+}
+
+.box img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.box h2 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #271b15;
+    font-family: var(--fonte-titulo);
+}
+
+/* tamanho da fonte da escrita da caixa */
+.box p {
+    font-size: 14px;
+    color: var(--marrom);
+}
+
+.box:hover {
+    transform: scale(1.05); 
+}
+/* Main da Sarah (Caixas d texto) */
+
+
+
+/* redes sociais */
+.redes ul{
+    display: flex;
+}
+
+.redes ul a{
+    display: block;
+    padding: 10px;
+}
+
+.redes ul li a img{
+    max-width: 200px;
+    margin: 20px;
+    height: 90px;
+   
+}
+
+
+/* slider sarah*/
+.contentslider{
+    height: 520px;
+    width: 935px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 0 auto;
+    /* position: absolute;
+    top: 50%;
+    left: 50%; */
+    /* transform: translate(-50%, -50%); */
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.contentslider .slide img {
+    height: 100%;
+    width: 100%;
+}
+
+.navigation {
+    /* position: absolute;
+    bottom: 160px;
+    left: 850px; */
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.bar {
+    width: 15px;
+    height: 15px;
+    border: 2px solid white;
+    margin: 6px;
+    border-radius: 15px;
+    cursor: pointer;
+    transform: .5s ease;
+}
+
+.bar:hover {
+    background-color: white;
+}
+
+input {
+  display: none;
+}
+
+.slides {
+    display: flex;
+    width: 500%;
+    height: 100%;
+}
+
+.slide {
+    width: 20%;
+    transition: .6s;
+}
+
+#slide1:checked ~ .s1 {
+    margin-left: 0;
+} 
+
+#slide2:checked ~ .s1 {
+    margin-left: -20%;
+} 
+
+#slide3:checked ~ .s1 {
+    margin-left: -40%;
+} 
+/* 
+#slide4:checked ~ .s1 {
+    margin-left: -60%;
+} 
+
+#slide5:checked ~ .s1 {
+    margin-left: -80%;
+} */
+/* slider sarah*/
+
+
+
+
+
+
+
+
+/* RODAPÉ RAELY */
+footer {
+    background-color:  rgb(44, 20, 5); /* Tom marrom consistente */
+    color: #ffd0b0;/* Texto branco */
+    padding: 10px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    border-top:  0.3rem solid rgb(255, 171, 116); /* Linha decorativa clara no topo do rodapé */
+    margin-top: 50px;
+    padding-top: 0.2rem;
+    padding-bottom: 0.5rem ;
+    display: block;
+}
+/* Ícones de redes sociais */
+footer .social-icons {
+    margin: 10px 0; /* Espaçamento acima e abaixo dos ícones */
+    
+}
+footer .social-icons a {
+    display: inline-block;
+    margin: 0 10px; /*Espaçamento entre os ícones*/
+    color: #fff; /*Cor branca para os ícones*/
+    font-size: 1.5rem; /*Tamanho maior para destaque*/
+    transition: color 0.3s ease; /*Transição suave no hover*/
+    
+}
+footer .social-icons a:hover {
+    color: #d2b48c; /* Mudança para tom claro no hover */
+}
+/* Texto do rodapé */
+footer p {
+    font-size: 0.9rem; /* Tamanho discreto */
+    margin-top: 15px;
+    opacity: 0.8; /* Texto com opacidade para suavidade */
+}
